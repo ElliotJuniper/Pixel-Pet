@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pixelpets</title>
+</head>
+<body>
+    <!-- SELECTOR/HOME PAGE - INITIALLY VISABILITY == "SHOW", BUTAFTER SELECTION, VISABILITY == "NONE" -->
+    <div id="homePage">
+        <h1>Pixelpets</h1>
+        <span>Choose a pet:</span>
+        <div id="selectorImageContainer">
+                <img id = "pandaSelectorImage" src="./images/headShots/panda.png" alt="">
+                <img id = "foxSelectorImage" src="./images/headShots/fox.png" alt="">
+                <img id = "bearSelectorImage" src="./images/headShots/bear.png" alt="">
+        </div>
+    </div>
+
+    <!-- MAIN GAME VISABILITY == 'NONE' INITIALLY, BUT BECOMES VISIBLE AFTER SELECTION  --> 
+    <div id="gamePage">
+        <div id = mainPetFlexWrapper>
+    
+            <span id="petName"></span>
+            <span id="state">None</span>
+            <div id="mainPetImage">
+            </div>
+
+            <div id="functionalityButtons"></div>
+            <div id="functionalityButtons">
+                <button id = "feedButton">Feed</button>
+                <button id = "playButton">Play</button>
+                <button id = "drinkButton">Drink</button>
+            </div>
+            
+            <div id="statusFlexWrapper">
+                <p>Fed: </p>
+                <div class="statusContainer">
+                    <div id="fedBar"></div></div>
+                <p>Entertained: </p>
+                <div class="statusContainer">
+                    <div id="entertainedBar"></div></div>
+                <p>Quenched: </p>
+                <div class="statusContainer"> 
+                    <div id="quenchedBar"></div></div>
+            </div>
+            
+            
+            <a href="index.html"><button id = "restartGameButton">Restart game</button></a>
+
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+    <script src="./classes.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
